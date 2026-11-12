@@ -50,15 +50,15 @@ public class Node {
 
     public void traverseInOrderDescending()
     {
-        if(leftChild != null)
-        {
-            leftChild.traverseInOrderDescending();
-        }
-        System.out.println("Data: " + data);
-
         if(rightChild != null)
         {
             rightChild.traverseInOrderDescending();
+        }
+        System.out.println("Data: " + data);
+
+        if(leftChild != null)
+        {
+            leftChild.traverseInOrderDescending();
         }
     }
 
